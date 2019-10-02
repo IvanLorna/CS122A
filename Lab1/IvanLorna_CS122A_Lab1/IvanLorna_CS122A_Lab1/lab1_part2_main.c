@@ -2,6 +2,8 @@
 NAME:Ivan Lorna
 Email: ilorn001@ucr.edu
 Partner: Emanuel Halfon
+
+Lab 1, Part 2
 */ 
 
 #include <avr/io.h>
