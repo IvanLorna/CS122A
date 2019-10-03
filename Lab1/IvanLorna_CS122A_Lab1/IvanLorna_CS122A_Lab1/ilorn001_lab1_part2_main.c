@@ -1,11 +1,12 @@
-/*
-NAME:Ivan Lorna
-Email: ilorn001@ucr.edu
-Partner: Emanuel Halfon
-
-Lab 1, Part 2
-*/ 
-
+/*    Name & Email: Ivan Lorna / ilorn001@ucr.edu
+ *    Partner(s) Name & E-mail: Emanuel Halfon / ehalf001@ucr.edu
+ *    Lab Section:  021
+ *    Assignment: Lab 1  Exercise 2
+ *    Exercise Description: [optional - include for your own benefit]
+ *    
+ *    I acknowledge all content contained herein, excluding template 
+ *     or example code, is my own original work.
+ */
 #include <avr/io.h>
 #include <stdlib.h>
 #include "../../../Headers/lcd.h"
