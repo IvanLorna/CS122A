@@ -11,8 +11,8 @@
 
 // Internal variables for mapping AVR's ISR to our cleaner TimerISR model.
 unsigned long PERIOD = 500; // Start count from here, down to 0. Default 1ms
-
-unsigned char tasksNum = 0; // Number of tasks in the scheduler. Default 0 tasks
+//unsigned char tasksSize = 99;
+//task tasks[99];
 
 ////////////////////////////////////////////////////////////////////////////////
 // Struct for Tasks represent a running process in our simple real-time operating system
@@ -22,8 +22,6 @@ typedef struct Task {
 	unsigned long elapsedTime; // Time elapsed since last task tick
 	int (*TickFct)(int); // Task tick function
 } task;
-
-task tasks[&tasksNum];
 
 ///////////////////////////////////////////////////////////////////////////////
 // Heart of the scheduler code
