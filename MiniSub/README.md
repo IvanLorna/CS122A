@@ -4,14 +4,18 @@ The Seadragon minisub built for the University of California, Riverside's studen
 The minisub is the proof of concept of the submarine's embedded systems, using a Teensy3.2(arduino), NVidia Jetson TX2(CPU), and XBox controller(Joystick) to emulate the real submarine.
 The minisub utilizes Robot Operating System (ROS), Python, Arduino, and C/C++ for our controls.
 
-## Getting Started
-
 ### Prerequisites
 
 * Ubuntu 18.04
 * ROS Melodic
 * Arduino IDE
 * Teensyduino
+
+## Getting Started
+
+1. On your Ubuntu 18.04 environment, navigate to the official arduino website and install the Arduino IDE 
+2. open a terminal and install ROS melodic for desktop following the `official ROS melodic installation guide`[http://wiki.ros.org/melodic/Installation/Ubuntu]
+3. install ROS arduino packages folliwng the `official rosserial_ardiuno installation guide` [http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup]
 
 ### Initializing ROS and nodes
 
@@ -20,28 +24,29 @@ The minisub utilizes Robot Operating System (ROS), Python, Arduino, and C/C++ fo
 roscore
 ```
 
-2. Find which device (jsX) is the Joystick:
+2. Find which device (js#) is the Joystick:
 ```
 ls /dev/input/
-sudo jstest /dev/input/jsX
 ```
 
-6. Initialize Joystick node
+Note: replace '#' with the number you find
+
+3. Initialize Joystick node
 ```
-ls -l /dev/input/jsX
-sudo chmod a+rw /dev/input/jsX
-rosparam set joy_node/dev "/dev/input/jsX"
+ls -l /dev/input/js#
+sudo chmod a+rw /dev/input/js#
+rosparam set joy_node/dev "/dev/input/js#"
 rosrun joy joy_node
 ```
 Note: I initialized an alias in ~/.bashrc to run all this from simply ("SD_JOYSTICK")
 
-7. Verify Joystick Topic Contents
+4. Verify Joystick Topic Contents
 ```
 rostopic echo /Joy
 ```
-8. Initialize Teensy nodes (see below)
+5. Initialize Teensy nodes (see below)
 
-9. Verify Teensy Topics Contents
+6. Verify Teensy Topics Contents
 ```
 rostopic echo /chatter
 ```
