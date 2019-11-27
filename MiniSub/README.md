@@ -14,8 +14,8 @@ The minisub utilizes Robot Operating System (ROS), Python, Arduino, and C/C++ fo
 ## Getting Started
 
 1. On your Ubuntu 18.04 environment, navigate to the official arduino website and install the Arduino IDE 
-2. open a terminal and install ROS melodic for desktop following the `official ROS melodic installation guide`[http://wiki.ros.org/melodic/Installation/Ubuntu]
-3. install ROS arduino packages folliwng the `official rosserial_ardiuno installation guide` [http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup]
+2. open a terminal and install ROS melodic for desktop following the [official ROS melodic installation guide](http://wiki.ros.org/melodic/Installation/Ubuntu)
+3. install ROS arduino packages folliwng the [official rosserial_ardiuno installation guide] (http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup)
 
 ### Initializing ROS and nodes
 
