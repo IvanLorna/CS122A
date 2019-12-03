@@ -48,8 +48,9 @@ rostopic echo /Joy
 
 6. Verify Teensy Topics Contents
 ```
-rostopic echo /chatter
+rostopic pub ThrusterStates std_msgs/UInt64 # --once
 ```
+Note: Replace '#' with any 64-bit number you'd like to test with, and the teensy should update the 'thrusters' in a pattern corresponding to the input value
 
 ### Initializing Teensy with ROS
 
