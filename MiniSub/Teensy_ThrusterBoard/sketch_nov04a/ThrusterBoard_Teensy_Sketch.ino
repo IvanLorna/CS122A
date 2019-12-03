@@ -65,6 +65,7 @@ void TSubCB(const std_msgs::UInt64& arr_msg) {
   unsigned char i;
   unsigned long temp = arr_msg.data;
   for (i = 0; i < 8; i++) {
+    temp = arr_msg.data;
     Thruster_Array[i].duty_cycle = ( (temp >> (8*i)) &0xFF );
   }
   Tasks[1].Active = true;
@@ -98,7 +99,7 @@ void setup() {
   //init tasks
   
   Tasks[0].state = 0;
-  Tasks[0].period = 1250000;
+  Tasks[0].period = global_period;
   Tasks[0].elapsed_time = 0;
   Tasks[0].TickFct = &PollSubscribers;
   Tasks[0].Active = true;//always happening, but run once on startup
