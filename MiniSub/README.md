@@ -57,8 +57,9 @@ Note: Replace '#' with any 64-bit number you'd like to test with, and the teensy
 1. Open a terminal on any directory and type
 ```roscore```
 2. Go to the Arduino IDE
-3. upload code utilizing ROS Publisher/Subscriber functionality
-4. Open a terminal and type 
+3. set programmer to "Arduino as ISP"
+4. upload code utilizing ROS Publisher/Subscriber functionality
+5. Open a terminal and type
 ```
 rosrun rosserial_python serial_node.py /dev/ttyACM0
 ```
