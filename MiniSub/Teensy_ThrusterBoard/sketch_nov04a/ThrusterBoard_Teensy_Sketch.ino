@@ -26,7 +26,7 @@ typedef struct Tasks {
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //GLOBAL VARIABLES
 
-int global_period = 125000;
+int global_period = 25000;
 IntervalTimer myTimer;
 
 thruster BASELINE;
@@ -63,7 +63,7 @@ std_msgs::UInt64 arr_msg;
 //each pin's PWM can be changed separately
 void TSubCB(const std_msgs::UInt64& arr_msg) {
   unsigned char i;
-  unsigned long temp = arr_msg.data;
+  unsigned long long temp = arr_msg.data;
   for (i = 0; i < 8; i++) {
     temp = arr_msg.data;
     Thruster_Array[i].duty_cycle = ( (temp >> (8*i)) &0xFF );
