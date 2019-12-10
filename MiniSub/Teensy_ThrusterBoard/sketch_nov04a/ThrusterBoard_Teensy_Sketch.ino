@@ -40,14 +40,14 @@ const unsigned char  tasks_size = 2;
 task Tasks[tasks_size];
 
   /* THRUSTER ARRAY MAP
-  0 T_FL; //frontal left 
-  1 T_FR; //frontal right
-  2 t_BL; //back left
-  3 t_BR; //back right
-  4 t_VFL; //vertical facing frontal left
-  5 t_VFR; //vertical facing frontal right
-  6 t_VBL; //vertical facing back left
-  7 t_VBR; //vertical facing back right
+    front
+    ____
+(0)|    |(7)
+(1)|    |(6)
+(2)|    |(5)
+(3)|____|(4)
+    back
+    
 
   UInt64 (unsigned 64bit int) [8][8][8][8][8][8][8][8] < 64bit int
   partitioned such that       [7][6][5][4][3][2][1][0] < thruster array
