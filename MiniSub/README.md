@@ -1,8 +1,8 @@
-# MINISUB
+# PSEUDODRAGON
 
-The Seadragon minisub built for the University of California, Riverside's student organization: RoboSub UCR. 
-The minisub is the proof of concept of the submarine's embedded systems, using a Teensy3.2(arduino), NVidia Jetson TX2(CPU), and XBox controller(Joystick) to emulate the real submarine.
-The minisub utilizes Robot Operating System (ROS), Python, Arduino, and C/C++ for our controls.
+The Seadragon is an autonomous submarine built for the University of California, Riverside's student organization: RoboSub UCR. 
+The pseudodragon is the mock/testing environment for the submarine's embedded systems; using a Teensy3.2(arduino), NVidia Jetson TX2(CPU), and XBox controller(Joystick) to emulate the real submarine.
+The pseudodragon utilizes Robot Operating System (ROS), Python, Arduino, and C/C++ for our controls.
 
 ### Prerequisites
 
